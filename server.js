@@ -7,10 +7,11 @@ app.use(express.json());
 
 // Konfiguracja połączenia z bazą danych
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
+    host: '',
+    user: '',
     password: '', 
-    database: 'sigma_hotel'
+    database: ''
+    // Proszę o uzupełnienie swoimi danymi
 });
 
 // Obsługa błędów połączenia z bazą
