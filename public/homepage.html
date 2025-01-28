@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigmotel.pl</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+</head>
+<body>
+    <h1>Sigmotel.pl</h1>
+    <h2>Hotele dla prawdziwych sigm</h2>
+    <form action="search.html" method="get">
+        <label for="miasto">Gdzie chcesz pojechać?</label>
+        <select id="miasto" name="miasto" required>
+            <option value="" disabled selected>Wybierz miejsce</option>
+            <option value="Sopot">Sopot</option>
+            <option value="Gdańsk">Gdańsk</option>
+            <option value="Słupno">Słupno</option>
+        </select>
+
+        <label for="checkin">Data zameldowania</label>
+        <input type="text" id="checkin" name="checkin" required>
+
+        <label for="checkout">Data wymeldowania</label>
+        <input type="text" id="checkout" name="checkout" required>
+
+        <label for="dorosli">Ile dorosłych:</label>
+        <select id="dorosli" name="dorosli" required>
+            <option value="" disabled selected>Wybierz liczbę dorosłych</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <label for="dzieci">Ile dzieci:</label>
+        <select id="dzieci" name="dzieci">
+            <option value="0" selected>0</option>
+            <option>1</option>
+            <option>2</option>
+        </select>
+
+        <input type="submit" value="Szukaj">
+    </form>
+</body>
+</html>

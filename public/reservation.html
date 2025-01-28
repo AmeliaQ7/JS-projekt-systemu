@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczegóły Rezerwacji</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="reservation.js"></script>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <h1>Szczegóły Rezerwacji</h1>
+    <div class="summary-bar">
+        <div class="summary-item">
+            <p>ID oferty: <br><span id="offerId"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Data zameldowania: <br><span id="checkin"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Data wymeldowania: <br><span id="checkout"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Liczba dni: <br><span id="numberOfNights"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Liczba wszystkich gości: <br><span id="goscie"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Cena całkowita: <br><span id="totalPrice"></span></p>
+        </div>
+    </div>
+    <h1>Formularz Rezerwacji</h1>
+
+    <form id="reservation-form" class="reservation-form">
+        <div class="form-group">
+            <label for="first-name">Imię:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="last-name">Nazwisko:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="country">Kraj:</label>
+            <select id="country" name="country" required>
+                <option value="Polska">Polska</option>
+                <option value="Niemcy">Niemcy</option>
+                <option value="Francja">Francja</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="phone">Numer telefonu:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+    
+        <!-- Ukryte pola dla dodatkowych danych -->
+        <input type="hidden" id="offerIdHidden" name="offerId">
+        <input type="hidden" id="checkinHidden" name="checkin">
+        <input type="hidden" id="checkoutHidden" name="checkout">
+        <input type="hidden" id="goscieHidden" name="goscie">
+        <input type="hidden" id="totalPriceHidden" name="totalPrice">
+        <input type="hidden" id="numberOfNightsHidden" name="numberOfNights">
+    
+        <button type="submit">Rezerwuj</button>
+    </form>
+    
+    <script src="reservation.js"></script>
+</body>
+</html>

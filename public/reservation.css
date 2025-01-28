@@ -1,0 +1,110 @@
+/* Ogólne ustawienia */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Nagłówki */
+h1, h2 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Sekcja podsumowania */
+.summary-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #656565; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.summary-item {
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.summary-item span {
+    font-weight: bold;
+    color: #b8b8b8; /* Akcent dla wartości */
+}
+
+/* Formularz rezerwacji */
+.reservation-form {
+    display: flex;
+    flex-direction: column; /* Elementy ułożone jeden pod drugim */
+    gap: 20px;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Zapewnia, że padding wlicza się do szerokości */
+}
+
+/* Style dla grupy pól formularza */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #444;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px; /* Większy padding dla przestronniejszych pól */
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Zapewnia, że padding wlicza się do szerokości */
+}
+
+/* Przyciski */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px; /* Większe przyciski */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* Efekt zmiany koloru tła i animacja */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Dodanie efektu uniesienia przycisku */
+}
+
+button:active {
+    transform: translateY(2px); /* Efekt kliknięcia */
+}
+

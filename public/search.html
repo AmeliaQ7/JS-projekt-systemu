@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyniki</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="search.js"></script>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <h1>SIGMA HOTEL</h1>
+    <div class="summary-bar">
+        <div class="summary-item">
+            <p>Miejsce: <br><span id="miasto"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Data zameldowania: <br><span id="checkin"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Data wymeldowania: <br><span id="checkout"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Liczba nocy: <br><span id="numberOfNights"></span></p>
+        </div>        
+        <div class="summary-item">
+            <p>Liczba dorosłych: <br><span id="dorosli"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Liczba dzieci: <br><span id="dzieci"></span></p>
+        </div>
+        <div class="summary-item">
+            <p>Liczba wszystkich gości: <br><span id="goscie"></span></p>
+        </div>
+    </div>
+    
+
+    <h2>Dostępne oferty:</h2>
+    <div id="results">
+        <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+    </div>
+</body>
+</html>
